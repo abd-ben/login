@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Login | Exemple</title>
+</h:head>
+<h:body>
+	<h:form>
+		<table>
+			<tr>
+				<td>
+					<h:outputLabel value="Login" for="login"></h:outputLabel>
+				</td>
+				<td>
+					<h:inputText value="#{userbean.user.login}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h:outputLabel value="Password" for="Password"></h:outputLabel>
+				</td>
+				<td>
+					<h:inputText value="#{userbean.user.password}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<h:commandButton action="#{userbean.login}" value="LogIn"></h:commandButton>
+				</td>
+			</tr>
+		</table>
+	</h:form>
+</h:body>
+</html>
